@@ -2,10 +2,6 @@ pragma solidity ^0.4.24;
 
 library AccountListLib {
     
-    struct AccountList {
-      address[] private list; 
-    }
-    
     function addressSwapSort(address[] storage _arr, uint _index) private returns(address[]){
         _arr[_index] = _arr[_arr.length - 1];
         delete _arr[_arr.length - 1];
