@@ -3,7 +3,7 @@ pragma solidity ^0.4.24;
 library AccountListLib {
     
     struct AccountList {
-      address[] list; 
+      address[] private list; 
     }
     
     function addressSwapSort(address[] storage _arr, uint _index) private returns(address[]){
