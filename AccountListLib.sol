@@ -19,4 +19,14 @@ library AccountList {
         
         return _arr;
     }
+    
+    function UintReorderSort(uint[] storage _arr, uint _index) internal returns(uint[]){
+        for(uint i = _index; i < _arr.length - 1; i++) {
+            _arr[_index] = _arr[_index + 1];
+        }
+        delete _arr[_arr.length - 1];
+        _arr.length--;
+        
+        return _arr;
+    }
 }
