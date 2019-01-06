@@ -59,7 +59,6 @@ library ListUtils {
      * @param _index - the index of the item to delete
      * @return returns the modified array
      */
-
     function UintReorderSort(uint[] storage _arr, uint _index) internal returns(uint[] memory){
         for(uint i = _index; i < _arr.length - 1; i++) {
             _arr[_index] = _arr[_index + 1];
