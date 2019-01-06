@@ -39,7 +39,7 @@ library ListUtils {
 
     /**
      * @notice Reorders an array after deleting an item by swapping with the last item in the list
-     * @dev Preserves order, but is expensive on gas with bigger lists
+     * @dev This method disregards order in the list
      * @param _arr - a uint storage array to rearrange after deleting an item
      * @param _index - the index of the item to delete
      * @return returns the modified array
