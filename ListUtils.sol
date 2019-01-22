@@ -13,6 +13,7 @@ library ListUtils {
      * @return returns the modified array
      */
     function AddressSwapSort(address[] storage _arr, uint _index) internal returns(address[] memory){
+        if(_index > _arr.length) return;
         _arr[_index] = _arr[_arr.length - 1];
         delete _arr[_arr.length - 1];
         _arr.length--;
@@ -28,6 +29,7 @@ library ListUtils {
      * @return returns the modified array
      */
     function AddressReorderSort(address[] storage _arr, uint _index) internal returns(address[] memory){
+        if(_index > _arr.length) return;
         for(uint i = _index; i < _arr.length - 1; i++) {
             _arr[_index] = _arr[_index + 1];
         }
@@ -45,6 +47,7 @@ library ListUtils {
      * @return returns the modified array
      */
     function UintSwapSort(address[] storage _arr, uint _index) internal returns(address[] memory){
+        if(_index > _arr.length) return;
         _arr[_index] = _arr[_arr.length - 1];
         delete _arr[_arr.length - 1];
         _arr.length--;
@@ -60,6 +63,7 @@ library ListUtils {
      * @return returns the modified array
      */
     function UintReorderSort(uint[] storage _arr, uint _index) internal returns(uint[] memory){
+        if(_index > _arr.length) return;
         for(uint i = _index; i < _arr.length - 1; i++) {
             _arr[_index] = _arr[_index + 1];
         }
