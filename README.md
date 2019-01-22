@@ -1,5 +1,5 @@
 # ListUtils
-A Solidity library for managing lists in a CRUD situation, ListUtils.sol implements two ways to manage deletions from a solidity array: swap and delete, and delete and shift approach. Use with care, both are expensive on gas, especially the delete and shift methods.
+A Solidity library for managing lists in a CRUD situation, ListUtils.sol implements two ways to manage deletions from a solidity array: *swap & delete*, and *delete & shift*. Use with care, both are expensive on gas, especially the delete and shift methods.
 
 ## Swap & Delete
 The item is swapped with the lst item and deleted. 
